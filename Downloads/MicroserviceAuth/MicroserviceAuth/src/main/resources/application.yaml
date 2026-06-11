@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: MicroserviceAuth
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/auth_db
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8084
+
+jwt:
+  secret: c3VwZXItc2VjcmV0LWtleS0yMDI2LWV2ZW50LWFwcC1taWNyb3NlcnZpY2Vz
+  access-expiration: 900000
+  refresh-expiration: 604800000
